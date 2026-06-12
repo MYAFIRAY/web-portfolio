@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Yafi Ray | Web & Mobile Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DevIcon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-outfit { font-family: 'Outfit', sans-serif; }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #e0e7ff 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Grid Background Minimalis */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-300 antialiased selection:bg-blue-500/30 selection:text-blue-100 relative">
+
+    <div class="fixed inset-0 z-[-1] bg-grid"></div>
+    <div class="fixed top-[-20%] left-[-10%] w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#0a0a0a]/70 border-b border-gray-800/40">
+        <nav class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="font-outfit font-extrabold text-2xl tracking-tight text-white flex items-center gap-2">
+                YafiRay<span class="text-blue-500 text-3xl leading-none">.</span>
+            </div>
+            <div class="flex gap-4 text-sm font-medium">
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors">Profil</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Keahlian</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Portofolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-24 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative group">
+                <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <img id="profile-avatar" src="" alt="Foto Profil" class="relative z-10 w-full h-full rounded-full object-cover border-[4px] border-gray-800 bg-gray-900 grayscale-[10%] group-hover:grayscale-0 transition-all duration-500">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 bg-gray-900 text-gray-300 px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-800 mb-6">
+                    <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <span id="profile-location">Memuat...</span>
+                </div>
+                <h1 class="font-outfit text-5xl md:text-7xl font-extrabold tracking-tight mb-4 leading-tight text-white">
+                    Halo, Saya <br/><span id="profile-name" class="text-gradient">Memuat...</span>
+                </h1>
+                <h2 id="profile-role" class="font-outfit text-xl md:text-2xl text-blue-400 font-semibold mb-6">Memuat...</h2>
+                <p id="profile-bio" class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto md:mx-0 font-light">Memuat...</p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 font-outfit">
+                    <a id="btn-email" href="#" class="bg-white text-black px-8 py-3.5 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center gap-2">
+                        Mari Berdiskusi
+                    </a>
+                    <a id="btn-linkedin" href="#" target="_blank" class="bg-gray-900 text-white px-7 py-3.5 rounded-full font-semibold border border-gray-800 hover:border-gray-600 transition-colors">LinkedIn</a>
+                    <a id="btn-github" href="#" target="_blank" class="bg-gray-900 text-white px-7 py-3.5 rounded-full font-semibold border border-gray-800 hover:border-gray-600 transition-colors">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian & Teknologi -->
+    <section id="skills" class="py-24 border-y border-gray-900 px-6 relative bg-[#0a0a0a]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-outfit text-3xl md:text-4xl font-extrabold text-white mb-6">Integrasi Bisnis & Teknologi</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">Berbekal pemahaman Sistem Informasi, saya memadukan kemampuan *coding* dengan manajemen proyek dan strategi digital. Tujuannya merancang aplikasi yang tidak hanya berfungsi dengan baik, tetapi juga memberikan solusi nyata bagi operasional bisnis.</p>
+                    <div id="analytical-container" class="flex flex-wrap gap-3">
+                        <!-- Data dari JS -->
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-outfit text-xl font-bold text-gray-300 mb-6 uppercase tracking-widest text-center md:text-left">Tech Stack Eksekusi</h2>
+                    <div id="skills-container" class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                        <!-- Data dari JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek & Pengalaman -->
+    <section id="projects" class="py-24 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                
+                <!-- Kolom Proyek -->
+                <div class="lg:col-span-2">
+                    <div class="mb-12">
+                        <h2 class="font-outfit text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">Karya Aplikasi Nyata</h2>
+                        <p class="text-gray-400 max-w-lg">Implementasi langsung dari penguasaan *Web & Mobile Development* ke dalam Prototype dan perangkat lunak untuk efisiensi operasional harian.</p>
+                    </div>
+                    <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Konten digenerate dari app.js -->
+                    </div>
+                </div>
+
+                <!-- Kolom Pengalaman -->
+                <div class="lg:col-span-1">
+                    <div class="mb-12">
+                        <h2 class="font-outfit text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">Jejak Langkah</h2>
+                    </div>
+                    <!-- Ditambahkan padding-bottom agar timeline tidak terpotong -->
+                    <div id="experience-container" class="space-y-8 pb-4">
+                        <!-- Konten digenerate dari app.js -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-900 bg-[#0a0a0a] mt-10">
+        <div class="max-w-6xl mx-auto px-6 py-12 text-center">
+            <div class="font-outfit font-extrabold text-2xl text-white tracking-tight mb-2">YafiRay.</div>
+            <p class="text-sm font-medium text-gray-600 mb-8">Business-driven mindset. Tech-oriented execution.</p>
+            <div class="text-xs text-gray-700">
+                © 2026 Professional Web Portfolio.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
